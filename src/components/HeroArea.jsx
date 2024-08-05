@@ -12,7 +12,7 @@ const HeroArea = () => {
             <div className="flex flex-row w-full md:w-[40rem]">
               <input
                 type="text"
-                className="shadow-innder border border-gray-300 rounded-l-md w-full py-3 px-4"
+                className="bg-green-900 opacity-40 shadow-innder border border-gray-300 rounded-l-md w-full py-3 px-4"
                 placeholder="Paste your URL here"
               />
               <button className="bg-sorange text-white px-6 py-3 rounded-r-md text-lg font-semibold hover:bg-orange-600 transition-colors">
