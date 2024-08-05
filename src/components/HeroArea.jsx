@@ -6,7 +6,7 @@ const HeroArea = () => {
       <div className="container-fluid w-full h-full">
         <div className="flex flex-col bg-steal py-12 md:py-20 items-center">
           <h2 className="text-secondary text-center text-3xl font-light md:text-3xl mb-6">
-            Enter the URL to Shorten
+            Enter the URL to Shorten!
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-center w-full md:w-auto">
             <div className="flex flex-row w-full md:w-[40rem]">
