@@ -3,8 +3,8 @@ import React from "react";
 const HeroArea = () => {
   return (
     <>
-      <div className="container-fluid w-full h-screen">
-        <div className="flex flex-col bg-steal py-12 md:py-20 items-center">
+      <div className="container-fluid w-full">
+        <div className="flex flex-col bg-steal py-12 md:py-20 items-center h-screen">
           <h2 className="text-secondary text-center text-3xl font-light md:text-3xl mb-6">
             Enter the URL to Shorten!
           </h2>
