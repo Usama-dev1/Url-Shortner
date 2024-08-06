@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="container-fluid mx-auto bg-primary px-8 py-5 md:py-0">
+        <div className="container-fluid mx-auto bg-primary py-5 md:py-0 px-8 w-full">
           {/* Toggle Button for Mobile Menu */}
           <div
             className="md:hidden flex items-center justify-between"
@@ -29,7 +29,9 @@ const Navbar = () => {
           {/* Menu Items */}
           <ul
             className={`flex-col md:flex-row md:flex justify-center md:items-center text-secondary ${
-              isOpen ? "md:hidden block text-center h-screen px-5 bg-primary" : "hidden"
+              isOpen
+                ? "md:hidden block text-center h-screen px-5 bg-primary"
+                : "hidden"
             } md:flex md:static md:p-0 md:m-0`}>
             <li className="px-10 py-5 hover:bg-sorange">
               <a href="/home">HOME</a>
@@ -50,11 +52,11 @@ const Navbar = () => {
               </a>
             </li>
             {/* Social Media Icons */}
-            <div className="flex justify-center item-center md:ms-3 space-x-4 py-5">
-              <FaFacebook className="text-secondary w-6 h-6 hover:text-sorange" />
-              <FaInstagram className="text-secondary w-6 h-6  hover:text-sorange" />
-              <FaTwitter className="text-secondary w-6 h-6  hover:text-sorange" />
-              <FaYoutube className="text-secondary w-6 h-6 hover:text-sorange" />
+            <div className="flex justify-center item-center md:ms-3 py-5 overflow-hidden">
+              <FaFacebook className="text-secondary mx-1 w-6 h-6 hover:text-sorange" />
+              <FaInstagram className="text-secondary mx-1 w-6 h-6  hover:text-sorange" />
+              <FaTwitter className="text-secondary mx-1 w-6 h-6  hover:text-sorange" />
+              <FaYoutube className="text-secondary mx-1 w-6 h-6 hover:text-sorange" />
             </div>
           </ul>
         </div>
