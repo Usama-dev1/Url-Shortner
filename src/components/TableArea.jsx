@@ -94,7 +94,7 @@ const TableArea = ({ eurl }) => {
                       onClick={() =>
                         copyToClipboard(`${domain}${item.shortId}`)
                       } // Copy the short URL
-                      className="bg-secondary text-primary text-sm font-semibold py-2 px-4 hover:bg-steal">
+                      className="bg-secondary text-nowrap text-primary text-sm font-semibold py-2 px-4 hover:bg-steal">
                       Copy Link
                     </button>
                   </td>
@@ -129,7 +129,7 @@ const TableArea = ({ eurl }) => {
                       onClick={() =>
                         copyToClipboard(`${domain}${item.shortId}`)
                       } // Copy the short URL
-                      className="bg-secondary text-sorange text-md font-bold w-[14rem] py-1 px-2 rounded mt-2 hover:bg-steal">
+                      className="bg-secondary text-nowrap text-sorange text-md font-bold w-[14rem] py-1 px-2 rounded mt-2 hover:bg-steal">
                       Copy Link
                     </button>
                   </div>
