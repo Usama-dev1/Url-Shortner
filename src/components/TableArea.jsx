@@ -41,7 +41,16 @@ const TableArea = () => {
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-
+  const copyToClipboard = (url) => {
+    navigator.clipboard
+      .writeText(url)
+      .then(() => {
+        alert("URL copied to clipboard!");
+      })
+      .catch((error) => {
+        console.error("Failed to copy URL:", error);
+      });
+  };
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
@@ -151,5 +160,3 @@ const TableArea = () => {
 };
 
 export default TableArea;
-
-
