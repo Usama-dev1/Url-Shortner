@@ -7,7 +7,7 @@ const TableArea = ({ eurl }) => {
   const domain = "https://url-shortner-backend-omega.vercel.app/";
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 5;
 
   useEffect(() => {
     const fetchData = async () => {
