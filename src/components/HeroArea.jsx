@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "../assets/pngwing.com.png";
 
-const HeroArea = () => {
+const HeroArea = ({setEurl}) => {
   const [url, setUrl] = useState(''); // Initialize state with an empty string
   const [shortenedUrl, setShortenedUrl] = useState(''); // State to store the shortened URL
   const [loading, setLoading] = useState(false); // State to handle loading
@@ -37,8 +37,9 @@ const HeroArea = () => {
 
       const result = await response.json();
       setShortenedUrl(result.shortenedUrl); // Set the shortened URL from the response
+      setEurl(result.shortenedUrl)
       setError(null); // Clear any previous errors
-      window.location.reload(); // Reload the page
+      // window.location.reload(); // Reload the page
     } catch (error) {
       console.error("Error shortening URL:", error);
       setError("Failed to shorten the URL. Please try again.");
