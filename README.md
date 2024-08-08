@@ -1,8 +1,28 @@
-# React + Vite
+# URL Shortener v1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+URL shortener application built with the MERN stack (MongoDB, Express, React, Node.js) that generates short codes for URLs. Deployed on Vercel.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Shorten long URLs into short codes
+- from 1 to 6 character shortening
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+- Vite for react
+- Vercel CLI (for deployment)
+
+### Installation
+
+1. **Clone frontend of the repository:**
+
+   git clone [https://github.com/Usama-dev1/Url-Shortner]
+   cd Url-Shortener
+2. **Clone backend of the repository:**
+
+   git clone [https://github.com/Usama-dev1/urlShortnerBackend]
+   cd backend
